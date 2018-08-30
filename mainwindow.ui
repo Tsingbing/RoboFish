@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>RoboFish-GCS 1.0</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{border-image: url(:/images/background3.jpg);}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="swtichButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>51</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>切换</string>
+    </property>
+   </widget>
+   <widget class="VideoSDK_Widget" name="widgetVideo" native="true">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>54</y>
+      <width>383</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 127);</string>
+    </property>
+   </widget>
+   <widget class="WidgetPFD" name="widgetPFD" native="true">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>310</y>
+      <width>381</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>821</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="temperature">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>temp</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="humidity">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>hum</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="voltage">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>voltage</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="current">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>current</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="pressure">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>pressure</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="heading">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>heading</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="roll">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>roll</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="pitch">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>pitch</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="led">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>led</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="pantile">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>pantile</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lg">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>lg</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="la">
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>la</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QAxWidget" name="axWidget">
+    <property name="control" stdset="0">
+     <string>{d27cdb6e-ae6d-11cf-96b8-444553540000}</string>
+    </property>
+    <property name="geometry" stdset="0">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>931</width>
+      <height>621</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>swtichButton</zorder>
+   <zorder>widgetPFD</zorder>
+   <zorder>widgetVideo</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>axWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1366</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(128, 159, 197);</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="actionhelp"/>
+    <addaction name="actionmanual"/>
+    <addaction name="actionAnto"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>地图</string>
+    </property>
+    <addaction name="actionsetCenter"/>
+    <addaction name="actionstartRuler"/>
+    <addaction name="actionclearRuler"/>
+    <addaction name="actioninit"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>姿态控件</string>
+     </property>
+     <addaction name="actioneasy"/>
+     <addaction name="actionhard"/>
+    </widget>
+    <addaction name="actionswitch"/>
+    <addaction name="menu_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>关于</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(143, 178, 220);</string>
+   </property>
+  </widget>
+  <action name="actionPID">
+   <property name="text">
+    <string>PID</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>地图</string>
+   </property>
+  </action>
+  <action name="actionhelp">
+   <property name="text">
+    <string>配置</string>
+   </property>
+  </action>
+  <action name="actionsetCenter">
+   <property name="text">
+    <string>中心点</string>
+   </property>
+  </action>
+  <action name="actionstartRuler">
+   <property name="text">
+    <string>startRuler</string>
+   </property>
+  </action>
+  <action name="actionclearRuler">
+   <property name="text">
+    <string>clearRuler</string>
+   </property>
+  </action>
+  <action name="actionmanual">
+   <property name="text">
+    <string>手动模式（默认）</string>
+   </property>
+  </action>
+  <action name="actionAnto">
+   <property name="text">
+    <string>自动模式（规划路径）</string>
+   </property>
+  </action>
+  <action name="actionswitch">
+   <property name="text">
+    <string>切换</string>
+   </property>
+  </action>
+  <action name="actioneasy">
+   <property name="text">
+    <string>简易控件</string>
+   </property>
+  </action>
+  <action name="actionhard">
+   <property name="text">
+    <string>复杂控件</string>
+   </property>
+  </action>
+  <action name="actioninit">
+   <property name="text">
+    <string>init</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QAxWidget</class>
+   <extends>QWidget</extends>
+   <header>qaxwidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>WidgetPFD</class>
+   <extends>QWidget</extends>
+   <header>WidgetPFD.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VideoSDK_Widget</class>
+   <extends>QWidget</extends>
+   <header>videosdk_widget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>onSwitchClicked()</slot>
+ </slots>
+</ui>
