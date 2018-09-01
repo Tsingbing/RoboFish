@@ -308,6 +308,9 @@
     <CustomBuild Include="res.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
+    <None Include="README.md">
+      <Filter>Generated Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="images\joystickInfo.jpg">
