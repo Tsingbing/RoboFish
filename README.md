@@ -6,5 +6,6 @@
     H264Play.lib
     dinput8.lib 
     dxguid.lib
+    map地图服务资源（不上传，联系作者）
 ```
 * 发布安装包（git默认不会上传dll、exe、lib文件）
