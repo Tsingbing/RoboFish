@@ -7,4 +7,4 @@
     dinput8.lib 
     dxguid.lib
 ```
-
+* 发布安装包（git默认不会上传dll、exe、lib文件）
