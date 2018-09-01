@@ -404,3 +404,20 @@ void UdpMaster::sendGPS(float longit, float latit)
 	m_UdpSocket->writeDatagram(desData, QHostAddress(m_remoteIP), 5001);
 }
 
+void UdpMaster::sendSelfBalance(qint8 qi, bool b)
+{
+	QByteArray desData;
+	desData.clear();
+	desData[0] = 0xfe;
+	desData[1] = 0x09;
+	desData[2] = 0x00;
+	desData[3] = 0x21; //命令号
+	desData[4] = b; //0:读 1:写
+	desData[5] = qi;
+	desData[6] = 0x00;
+	desData[7] = 0x00;
+	desData[8] = 0x0a;
+	emit sendSendData(QString(desData.toHex(':')));
+	m_UdpSocket->writeDatagram(desData, QHostAddress(m_remoteIP), 5001);
+}
+

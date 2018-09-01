@@ -29,6 +29,7 @@ public slots:
 	void sendSetPIDParameters(qint8 mode, float P, float I, float D);
 	void sendMachineHand(qint8 qi);//设置机械手抓海参
 	void sendGPS(float longit, float latit);
+	void sendSelfBalance(qint8 qi, bool b); //自平衡启动
 
 private:
 	QString m_dataStateAck;

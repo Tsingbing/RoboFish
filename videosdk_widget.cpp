@@ -156,14 +156,14 @@ void VideoSDK_Widget::playCamera()
 
 	if (!H264_PLAY_OpenStream(m_nIndex, &byFileHeadBuf, 1, SOURCE_BUF_MIN * 100))
 	{
-		QMessageBox::warning(NULL, "WARNING", "视频流打开失败!", QMessageBox::Ok);
+		//QMessageBox::warning(NULL, "WARNING", "视频流打开失败!", QMessageBox::Ok);
 		return;//不知道此处加return是否正确
 	}
 	else
 	{
 		qDebug() << tr("视频流打开成功");
 		//ui->state_label->setText(tr("视频流打开成功"));
-		QMessageBox::warning(NULL, "WARNING", "视频流打开成功!", QMessageBox::Ok);
+		//QMessageBox::warning(NULL, "WARNING", "视频流打开成功!", QMessageBox::Ok);
 	}
 	//设置信息帧回调
 	LONG myUser = 0;
@@ -177,7 +177,7 @@ void VideoSDK_Widget::playCamera()
 	if (H264_PLAY_Play(m_nIndex, g_hWnd))
 	{
 		m_nPlaydecHandle = m_nIndex;
-		QMessageBox::warning(NULL, "WARNING", "播放成功!", QMessageBox::Ok);
+		//QMessageBox::warning(NULL, "WARNING", "播放成功!", QMessageBox::Ok);
 	}
 	else
 	{

@@ -1,2 +1,86 @@
-﻿  Generate moc_predefs.h
+﻿  Moc'ing mapwidget.h...
+  Moc'ing qjoystick.h...
+  Moc'ing udpmaster.hpp...
+  Moc'ing LayoutSquare.h...
+  Moc'ing WidgetPFD.h...
+  Moc'ing dialog.h...
+  Moc'ing mainwindow.h...
+  Moc'ing qfi_PFD.h...
+  Moc'ing videosdk_widget.h...
+  Generate moc_predefs.h
+  Uic'ing WidgetPFD.ui...
+  Uic'ing dialog.ui...
+  Uic'ing mainwindow.ui...
+  Rcc'ing res.qrc...
+  Uic'ing mapwidget.ui...
+  qrc_res.cpp
+  LayoutSquare.cpp
+  mapwidget.cpp
+mapwidget.cpp(35): warning C4305: “参数”: 从“double”到“float”截断
+  qjoystick.cpp
+qjoystick.cpp(109): warning C4100: “pContext”: 未引用的形参
+qjoystick.cpp(141): warning C4100: “pContext”: 未引用的形参
+qjoystick.cpp(273): warning C4018: “<”: 有符号/无符号不匹配
+qjoystick.cpp(340): warning C4018: “<”: 有符号/无符号不匹配
+  moc_dialog.cpp
+  moc_LayoutSquare.cpp
+  moc_mainwindow.cpp
+  moc_mapwidget.cpp
+  moc_qfi_PFD.cpp
+  moc_qjoystick.cpp
+  moc_udpmaster.cpp
+  moc_videosdk_widget.cpp
+  moc_WidgetPFD.cpp
+e:\01_robotsea\01_pro\08_robofish\robofish\release\../WidgetPFD.h(120): warning C4100: “pressure”: 未引用的形参
+  udpmaster.cpp
+udpmaster.cpp(225): warning C4309: “参数”: 截断常量值
+udpmaster.cpp(243): warning C4309: “参数”: 截断常量值
+udpmaster.cpp(289): warning C4309: “参数”: 截断常量值
+udpmaster.cpp(307): warning C4309: “参数”: 截断常量值
+udpmaster.cpp(341): warning C4309: “参数”: 截断常量值
+udpmaster.cpp(360): warning C4309: “参数”: 截断常量值
+udpmaster.cpp(394): warning C4309: “参数”: 截断常量值
+udpmaster.cpp(411): warning C4309: “参数”: 截断常量值
+  WidgetPFD.cpp
+e:\01_robotsea\01_pro\08_robofish\robofish\WidgetPFD.h(120): warning C4100: “pressure”: 未引用的形参
+  dialog.cpp
+  main.cpp
+  mainwindow.cpp
+e:\01_robotsea\01_pro\08_robofish\robofish\WidgetPFD.h(120): warning C4100: “pressure”: 未引用的形参
+mainwindow.cpp(459): warning C4100: “event”: 未引用的形参
+mainwindow.cpp(495): warning C4189: “pitch”: 局部变量已初始化但不引用
+mainwindow.cpp(494): warning C4189: “roll”: 局部变量已初始化但不引用
+mainwindow.cpp(501): warning C4189: “airspeed”: 局部变量已初始化但不引用
+mainwindow.cpp(506): warning C4189: “adf”: 局部变量已初始化但不引用
+mainwindow.cpp(507): warning C4189: “dme”: 局部变量已初始化但不引用
+  qfi_PFD.cpp
+  videosdk_widget.cpp
+videosdk_widget.cpp(13): warning C4100: “dwUser”: 未引用的形参
+videosdk_widget.cpp(13): warning C4100: “nDVRPort”: 未引用的形参
+videosdk_widget.cpp(12): warning C4100: “pchDVRIP”: 未引用的形参
+videosdk_widget.cpp(12): warning C4100: “lLoginID”: 未引用的形参
+videosdk_widget.cpp(29): warning C4100: “nUser”: 未引用的形参
+videosdk_widget.cpp(29): warning C4100: “nSize”: 未引用的形参
+videosdk_widget.cpp(29): warning C4100: “pBuf”: 未引用的形参
+videosdk_widget.cpp(29): warning C4100: “nPort”: 未引用的形参
+videosdk_widget.cpp(39): warning C4100: “nUser”: 未引用的形参
+videosdk_widget.cpp(39): warning C4100: “nType”: 未引用的形参
+videosdk_widget.cpp(39): warning C4100: “nStamp”: 未引用的形参
+videosdk_widget.cpp(39): warning C4100: “nHeight”: 未引用的形参
+videosdk_widget.cpp(39): warning C4100: “nWidth”: 未引用的形参
+videosdk_widget.cpp(39): warning C4100: “nSize”: 未引用的形参
+videosdk_widget.cpp(39): warning C4100: “pBuf”: 未引用的形参
+videosdk_widget.cpp(39): warning C4100: “nPort”: 未引用的形参
+videosdk_widget.cpp(58): warning C4100: “dwUser”: 未引用的形参
+videosdk_widget.cpp(57): warning C4100: “dwDataType”: 未引用的形参
+videosdk_widget.cpp(56): warning C4100: “lRealHandle”: 未引用的形参
+videosdk_widget.cpp(91): warning C4311: “类型转换”: 从“VideoSDK_Widget *const ”到“DWORD”的指针截断
+videosdk_widget.cpp(91): warning C4302: “类型转换”: 从“VideoSDK_Widget *const ”到“DWORD”截断
+videosdk_widget.cpp(88): warning C4100: “pDev”: 未引用的形参
+videosdk_widget.cpp(132): warning C4311: “类型转换”: 从“VideoSDK_Widget *const ”到“DWORD”的指针截断
+videosdk_widget.cpp(132): warning C4302: “类型转换”: 从“VideoSDK_Widget *const ”到“DWORD”截断
+videosdk_widget.cpp(203): warning C4311: “类型转换”: 从“VideoSDK_Widget *const ”到“long”的指针截断
+videosdk_widget.cpp(203): warning C4302: “类型转换”: 从“VideoSDK_Widget *const ”到“long”截断
+  正在生成代码...
+dinput8.lib(dilib4.obj) : warning LNK4078: 找到多个“.text”节，它们具有不同的特性(C0500040)
   RoboFish.vcxproj -> E:\01_RobotSea\01_Pro\08_RoboFish\RoboFish\release\RoboFish.exe

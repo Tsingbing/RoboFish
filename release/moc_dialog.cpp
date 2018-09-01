@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Dialog_t {
-    QByteArrayData data[25];
-    char stringdata0[458];
+    QByteArrayData data[26];
+    char stringdata0[491];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -54,8 +54,9 @@ QT_MOC_LITERAL(19, 303, 28), // "on_sendPanTiltButton_clicked"
 QT_MOC_LITERAL(20, 332, 24), // "on_sendGPSButton_clicked"
 QT_MOC_LITERAL(21, 357, 24), // "on_sendPIDButton_clicked"
 QT_MOC_LITERAL(22, 382, 26), // "on_sendLightButton_clicked"
-QT_MOC_LITERAL(23, 409, 23), // "on_zoomInButton_clicked"
-QT_MOC_LITERAL(24, 433, 24) // "on_zoomOutButton_clicked"
+QT_MOC_LITERAL(23, 409, 32), // "on_sendSelfBalanceButton_clicked"
+QT_MOC_LITERAL(24, 442, 23), // "on_zoomInButton_clicked"
+QT_MOC_LITERAL(25, 466, 24) // "on_zoomOutButton_clicked"
 
     },
     "Dialog\0setReciveData\0\0setSendData\0"
@@ -70,6 +71,7 @@ QT_MOC_LITERAL(24, 433, 24) // "on_zoomOutButton_clicked"
     "on_sendGPSButton_clicked\0"
     "on_sendPIDButton_clicked\0"
     "on_sendLightButton_clicked\0"
+    "on_sendSelfBalanceButton_clicked\0"
     "on_zoomInButton_clicked\0"
     "on_zoomOutButton_clicked"
 };
@@ -81,7 +83,7 @@ static const uint qt_meta_data_Dialog[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      21,   14, // methods
+      22,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -89,27 +91,28 @@ static const uint qt_meta_data_Dialog[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,  119,    2, 0x0a /* Public */,
-       3,    1,  122,    2, 0x0a /* Public */,
-       4,    1,  125,    2, 0x0a /* Public */,
-       6,    1,  128,    2, 0x0a /* Public */,
-       7,    1,  131,    2, 0x0a /* Public */,
-       8,    1,  134,    2, 0x0a /* Public */,
-       9,    1,  137,    2, 0x0a /* Public */,
-      10,    1,  140,    2, 0x0a /* Public */,
-      11,    1,  143,    2, 0x0a /* Public */,
-      12,    1,  146,    2, 0x0a /* Public */,
-      13,    1,  149,    2, 0x0a /* Public */,
-      14,    1,  152,    2, 0x0a /* Public */,
-      16,    1,  155,    2, 0x0a /* Public */,
-      17,    1,  158,    2, 0x0a /* Public */,
-      18,    0,  161,    2, 0x0a /* Public */,
-      19,    0,  162,    2, 0x0a /* Public */,
-      20,    0,  163,    2, 0x0a /* Public */,
-      21,    0,  164,    2, 0x0a /* Public */,
-      22,    0,  165,    2, 0x0a /* Public */,
-      23,    0,  166,    2, 0x0a /* Public */,
-      24,    0,  167,    2, 0x0a /* Public */,
+       1,    1,  124,    2, 0x0a /* Public */,
+       3,    1,  127,    2, 0x0a /* Public */,
+       4,    1,  130,    2, 0x0a /* Public */,
+       6,    1,  133,    2, 0x0a /* Public */,
+       7,    1,  136,    2, 0x0a /* Public */,
+       8,    1,  139,    2, 0x0a /* Public */,
+       9,    1,  142,    2, 0x0a /* Public */,
+      10,    1,  145,    2, 0x0a /* Public */,
+      11,    1,  148,    2, 0x0a /* Public */,
+      12,    1,  151,    2, 0x0a /* Public */,
+      13,    1,  154,    2, 0x0a /* Public */,
+      14,    1,  157,    2, 0x0a /* Public */,
+      16,    1,  160,    2, 0x0a /* Public */,
+      17,    1,  163,    2, 0x0a /* Public */,
+      18,    0,  166,    2, 0x0a /* Public */,
+      19,    0,  167,    2, 0x0a /* Public */,
+      20,    0,  168,    2, 0x0a /* Public */,
+      21,    0,  169,    2, 0x0a /* Public */,
+      22,    0,  170,    2, 0x0a /* Public */,
+      23,    0,  171,    2, 0x0a /* Public */,
+      24,    0,  172,    2, 0x0a /* Public */,
+      25,    0,  173,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QString,    2,
@@ -126,6 +129,7 @@ static const uint qt_meta_data_Dialog[] = {
     QMetaType::Void, QMetaType::QString,   15,
     QMetaType::Void, QMetaType::QString,   15,
     QMetaType::Void, QMetaType::QString,   15,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -162,8 +166,9 @@ void Dialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 16: _t->on_sendGPSButton_clicked(); break;
         case 17: _t->on_sendPIDButton_clicked(); break;
         case 18: _t->on_sendLightButton_clicked(); break;
-        case 19: _t->on_zoomInButton_clicked(); break;
-        case 20: _t->on_zoomOutButton_clicked(); break;
+        case 19: _t->on_sendSelfBalanceButton_clicked(); break;
+        case 20: _t->on_zoomInButton_clicked(); break;
+        case 21: _t->on_zoomOutButton_clicked(); break;
         default: ;
         }
     }
@@ -194,13 +199,13 @@ int Dialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 21)
+        if (_id < 22)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 21;
+        _id -= 22;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 21)
+        if (_id < 22)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 21;
+        _id -= 22;
     }
     return _id;
 }

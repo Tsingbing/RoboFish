@@ -119,6 +119,13 @@ public:
     QHBoxLayout *horizontalLayout_11;
     QLabel *label_23;
     QLineEdit *latitude;
+    QGroupBox *groupBox_10;
+    QWidget *horizontalLayoutWidget_9;
+    QHBoxLayout *horizontalLayout_12;
+    QCheckBox *openClose;
+    QLabel *label_25;
+    QLineEdit *selfBalance;
+    QPushButton *sendSelfBalanceButton;
     QWidget *tab_2;
     QGroupBox *groupBox;
     QWidget *verticalLayoutWidget;
@@ -197,7 +204,7 @@ public:
     {
         if (Dialog->objectName().isEmpty())
             Dialog->setObjectName(QStringLiteral("Dialog"));
-        Dialog->resize(745, 523);
+        Dialog->resize(731, 523);
         toolBox = new QToolBox(Dialog);
         toolBox->setObjectName(QStringLiteral("toolBox"));
         toolBox->setGeometry(QRect(-200, 310, 69, 121));
@@ -216,10 +223,10 @@ public:
         tab_1->setObjectName(QStringLiteral("tab_1"));
         groupBox_3 = new QGroupBox(tab_1);
         groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
-        groupBox_3->setGeometry(QRect(390, 120, 291, 81));
+        groupBox_3->setGeometry(QRect(380, 90, 291, 51));
         horizontalLayoutWidget_4 = new QWidget(groupBox_3);
         horizontalLayoutWidget_4->setObjectName(QStringLiteral("horizontalLayoutWidget_4"));
-        horizontalLayoutWidget_4->setGeometry(QRect(20, 30, 251, 25));
+        horizontalLayoutWidget_4->setGeometry(QRect(20, 20, 251, 25));
         horizontalLayout_7 = new QHBoxLayout(horizontalLayoutWidget_4);
         horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
         horizontalLayout_7->setContentsMargins(0, 0, 0, 0);
@@ -457,7 +464,7 @@ public:
 
         groupBox_6 = new QGroupBox(tab_1);
         groupBox_6->setObjectName(QStringLiteral("groupBox_6"));
-        groupBox_6->setGeometry(QRect(20, 230, 351, 71));
+        groupBox_6->setGeometry(QRect(20, 230, 331, 61));
         horizontalLayoutWidget_5 = new QWidget(groupBox_6);
         horizontalLayoutWidget_5->setObjectName(QStringLiteral("horizontalLayoutWidget_5"));
         horizontalLayoutWidget_5->setGeometry(QRect(40, 30, 281, 25));
@@ -491,10 +498,10 @@ public:
 
         groupBox_2 = new QGroupBox(tab_1);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
-        groupBox_2->setGeometry(QRect(390, 20, 241, 81));
+        groupBox_2->setGeometry(QRect(390, 20, 241, 61));
         horizontalLayoutWidget = new QWidget(groupBox_2);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(40, 30, 160, 31));
+        horizontalLayoutWidget->setGeometry(QRect(30, 20, 160, 31));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -510,7 +517,7 @@ public:
 
         groupBox_9 = new QGroupBox(tab_1);
         groupBox_9->setObjectName(QStringLiteral("groupBox_9"));
-        groupBox_9->setGeometry(QRect(390, 220, 291, 91));
+        groupBox_9->setGeometry(QRect(380, 150, 291, 91));
         sendGPSButton = new QPushButton(groupBox_9);
         sendGPSButton->setObjectName(QStringLiteral("sendGPSButton"));
         sendGPSButton->setGeometry(QRect(190, 40, 75, 23));
@@ -546,6 +553,33 @@ public:
 
         horizontalLayout_11->addWidget(latitude);
 
+        groupBox_10 = new QGroupBox(tab_1);
+        groupBox_10->setObjectName(QStringLiteral("groupBox_10"));
+        groupBox_10->setGeometry(QRect(380, 250, 291, 61));
+        horizontalLayoutWidget_9 = new QWidget(groupBox_10);
+        horizontalLayoutWidget_9->setObjectName(QStringLiteral("horizontalLayoutWidget_9"));
+        horizontalLayoutWidget_9->setGeometry(QRect(30, 20, 231, 22));
+        horizontalLayout_12 = new QHBoxLayout(horizontalLayoutWidget_9);
+        horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
+        horizontalLayout_12->setContentsMargins(0, 0, 0, 0);
+        openClose = new QCheckBox(horizontalLayoutWidget_9);
+        openClose->setObjectName(QStringLiteral("openClose"));
+
+        horizontalLayout_12->addWidget(openClose);
+
+        label_25 = new QLabel(horizontalLayoutWidget_9);
+        label_25->setObjectName(QStringLiteral("label_25"));
+
+        horizontalLayout_12->addWidget(label_25);
+
+        selfBalance = new QLineEdit(horizontalLayoutWidget_9);
+        selfBalance->setObjectName(QStringLiteral("selfBalance"));
+
+        horizontalLayout_12->addWidget(selfBalance);
+
+        sendSelfBalanceButton = new QPushButton(groupBox_10);
+        sendSelfBalanceButton->setObjectName(QStringLiteral("sendSelfBalanceButton"));
+        sendSelfBalanceButton->setGeometry(QRect(190, 20, 75, 23));
         tabWidget->addTab(tab_1, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -853,7 +887,7 @@ public:
         retranslateUi(Dialog);
 
         toolBox->setCurrentIndex(0);
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(Dialog);
@@ -894,6 +928,11 @@ public:
         longitude->setText(QApplication::translate("Dialog", "116.307028", Q_NULLPTR));
         label_23->setText(QApplication::translate("Dialog", "\347\272\254\345\272\246\357\274\232", Q_NULLPTR));
         latitude->setText(QApplication::translate("Dialog", "40.030459", Q_NULLPTR));
+        groupBox_10->setTitle(QApplication::translate("Dialog", "sendSelfBalance", Q_NULLPTR));
+        openClose->setText(QApplication::translate("Dialog", "\345\274\200\345\205\263", Q_NULLPTR));
+        label_25->setText(QApplication::translate("Dialog", "\350\207\252\345\271\263\350\241\241\345\220\257\345\212\250\357\274\232", Q_NULLPTR));
+        selfBalance->setText(QApplication::translate("Dialog", "80", Q_NULLPTR));
+        sendSelfBalanceButton->setText(QApplication::translate("Dialog", "\345\217\221\351\200\201", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_1), QApplication::translate("Dialog", "Udp\345\221\275\344\273\244", Q_NULLPTR));
         groupBox->setTitle(QApplication::translate("Dialog", "\350\256\276\347\275\256PID", Q_NULLPTR));
         label_2->setText(QApplication::translate("Dialog", "P\345\200\274\357\274\232", Q_NULLPTR));

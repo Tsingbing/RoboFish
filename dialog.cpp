@@ -1,6 +1,7 @@
 #include "dialog.h"
 #include "ui_dialog.h"
 #include <QDebug>
+#include <QByteArray>
 
 Dialog::Dialog(UdpMaster *um, QWidget *parent) :
     QDialog(parent),
@@ -59,6 +60,14 @@ void Dialog::on_sendGPSButton_clicked()
 	mUdp->sendGPS(ui->longitude->text().toFloat(), ui->latitude->text().toFloat());
 }
 
+void Dialog::on_sendSelfBalanceButton_clicked() 
+{
+	/*QByteArray a = ui->selfBalance->text().toLatin1();
+	qDebug() << "aaaaaaaaaaaaa:" << a.toHex();
+	int b = 80;
+	mUdp->sendSelfBalance(b);*/
+	mUdp->sendSelfBalance((qint8)(ui->selfBalance->text().toInt()), ui->openClose->isChecked());
+}
 void Dialog::on_sendPIDButton_clicked()
 {
 	mUdp->sendSetPIDParameters(1, m_p, m_i, m_d);

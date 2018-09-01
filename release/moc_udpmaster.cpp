@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_UdpMaster_t {
-    QByteArrayData data[32];
-    char stringdata0[304];
+    QByteArrayData data[33];
+    char stringdata0[320];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -62,7 +62,8 @@ QT_MOC_LITERAL(27, 264, 15), // "sendMachineHand"
 QT_MOC_LITERAL(28, 280, 2), // "qi"
 QT_MOC_LITERAL(29, 283, 7), // "sendGPS"
 QT_MOC_LITERAL(30, 291, 6), // "longit"
-QT_MOC_LITERAL(31, 298, 5) // "latit"
+QT_MOC_LITERAL(31, 298, 5), // "latit"
+QT_MOC_LITERAL(32, 304, 15) // "sendSelfBalance"
 
     },
     "UdpMaster\0sendReciveData\0\0sendSendData\0"
@@ -73,7 +74,7 @@ QT_MOC_LITERAL(31, 298, 5) // "latit"
     "axisY\0axisR\0axisU\0b\0sendSetMotorParameters\0"
     "LF\0LB\0RF\0RB\0sendSetPIDParameters\0mode\0"
     "P\0I\0D\0sendMachineHand\0qi\0sendGPS\0"
-    "longit\0latit"
+    "longit\0latit\0sendSelfBalance"
 };
 #undef QT_MOC_LITERAL
 
@@ -83,7 +84,7 @@ static const uint qt_meta_data_UdpMaster[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      12,   14, // methods
+      13,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -91,20 +92,21 @@ static const uint qt_meta_data_UdpMaster[] = {
        3,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   74,    2, 0x06 /* Public */,
-       3,    1,   77,    2, 0x06 /* Public */,
-       4,    7,   80,    2, 0x06 /* Public */,
+       1,    1,   79,    2, 0x06 /* Public */,
+       3,    1,   82,    2, 0x06 /* Public */,
+       4,    7,   85,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       5,    0,   95,    2, 0x0a /* Public */,
-       6,    1,   96,    2, 0x0a /* Public */,
-       8,    1,   99,    2, 0x0a /* Public */,
-      10,    0,  102,    2, 0x0a /* Public */,
-      11,    5,  103,    2, 0x0a /* Public */,
-      17,    4,  114,    2, 0x0a /* Public */,
-      22,    4,  123,    2, 0x0a /* Public */,
-      27,    1,  132,    2, 0x0a /* Public */,
-      29,    2,  135,    2, 0x0a /* Public */,
+       5,    0,  100,    2, 0x0a /* Public */,
+       6,    1,  101,    2, 0x0a /* Public */,
+       8,    1,  104,    2, 0x0a /* Public */,
+      10,    0,  107,    2, 0x0a /* Public */,
+      11,    5,  108,    2, 0x0a /* Public */,
+      17,    4,  119,    2, 0x0a /* Public */,
+      22,    4,  128,    2, 0x0a /* Public */,
+      27,    1,  137,    2, 0x0a /* Public */,
+      29,    2,  140,    2, 0x0a /* Public */,
+      32,    2,  145,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString,    2,
@@ -121,6 +123,7 @@ static const uint qt_meta_data_UdpMaster[] = {
     QMetaType::Void, QMetaType::SChar, QMetaType::Float, QMetaType::Float, QMetaType::Float,   23,   24,   25,   26,
     QMetaType::Void, QMetaType::SChar,   28,
     QMetaType::Void, QMetaType::Float, QMetaType::Float,   30,   31,
+    QMetaType::Void, QMetaType::SChar, QMetaType::Bool,   28,   16,
 
        0        // eod
 };
@@ -143,6 +146,7 @@ void UdpMaster::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         case 9: _t->sendSetPIDParameters((*reinterpret_cast< qint8(*)>(_a[1])),(*reinterpret_cast< float(*)>(_a[2])),(*reinterpret_cast< float(*)>(_a[3])),(*reinterpret_cast< float(*)>(_a[4]))); break;
         case 10: _t->sendMachineHand((*reinterpret_cast< qint8(*)>(_a[1]))); break;
         case 11: _t->sendGPS((*reinterpret_cast< float(*)>(_a[1])),(*reinterpret_cast< float(*)>(_a[2]))); break;
+        case 12: _t->sendSelfBalance((*reinterpret_cast< qint8(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -197,13 +201,13 @@ int UdpMaster::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 12)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 12;
+        _id -= 13;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 12)
+        if (_id < 13)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 12;
+        _id -= 13;
     }
     return _id;
 }

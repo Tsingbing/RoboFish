@@ -41,6 +41,7 @@ public slots:
 	void on_sendGPSButton_clicked();
 	void on_sendPIDButton_clicked();
 	void on_sendLightButton_clicked();
+	void on_sendSelfBalanceButton_clicked();
 	void on_zoomInButton_clicked();
 	void on_zoomOutButton_clicked();
 	
