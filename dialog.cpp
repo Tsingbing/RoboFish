@@ -1,4 +1,4 @@
-#include "dialog.h"
+ï»¿#include "dialog.h"
 #include "ui_dialog.h"
 #include <QDebug>
 #include <QByteArray>
@@ -19,7 +19,7 @@ Dialog::Dialog(UdpMaster *um, QWidget *parent) :
 {
     ui->setupUi(this);
 	//setAttribute(Qt::WA_DeleteOnClose);
-	//ÉèÖÃjoystickÍ¼Æ¬
+	//è®¾ç½®joystickå›¾ç‰‡
 	QPixmap pixmap(":/images/joystickInfo.jpg");
 	ui->label_14->setPixmap(pixmap);
 	ui->label_14->show();
